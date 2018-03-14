@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.space"
+    android-versionCode="6"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+  <name>Shadow Space Impact</name>
+  <description>
+     my game
+  </description>
+  <author>
+      Shashank Padwal
+  </author>
+  
+  <gap:plugin name="phonegap-admob" source="npm"/>
+  <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
+  <!-- all platforms -->
+  <icon src="icon.png" />
+  <preference name="phonegap-version" value="cli-6.5.0" />
+  <preference name="fullscreen" value="true" />
+  
+
+
+	<platform name="ios" >
+        
+		<preference name="target-device" value="universal" />
+		<preference name="prerendered-icon" value="true" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="true" />
+		<preference name="deployment-target" value="7.0" />
+        <preference name="fullscreen" value="true" />
+        <preference name="orientation" value="portrait" />
+	</platform>
+
+	<platform name="android" >
+        <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+		<preference name="fullscreen" value="true" />
+  		<preference name="orientation" value="portrait" />
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+	</platform>
+</widget>
+    
