@@ -13,9 +13,10 @@
   <author>
       Shashank Padwal
   </author>
+  <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
   
   <!-- <gap:plugin name="phonegap-admob" source="npm"/> -->
-  <gap:plugin name="https://github.com/floatinghotpot/cordova-admob-pro.git" source="git" />
+  <gap:plugin name="https://github.com/appfeel/admob-google-cordova.git" source="git" />
   <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
   <!-- all platforms -->
   <icon src="icon.png" />
@@ -36,7 +37,6 @@
 	</platform>
 
 	<platform name="android" >
-        <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
 		<preference name="fullscreen" value="true" />
   		<preference name="orientation" value="portrait" />
         <preference name="AndroidPersistentFileLocation" value="Compatibility" />
