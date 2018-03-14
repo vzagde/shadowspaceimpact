@@ -14,7 +14,8 @@
       Shashank Padwal
   </author>
   
-  <gap:plugin name="phonegap-admob" source="npm"/>
+  <!-- <gap:plugin name="phonegap-admob" source="npm"/> -->
+  <gap:plugin name="https://github.com/floatinghotpot/cordova-admob-pro.git" source="git" />
   <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
   <!-- all platforms -->
   <icon src="icon.png" />
@@ -30,8 +31,8 @@
 		<preference name="detect-data-types" value="true" />
 		<preference name="exit-on-suspend" value="true" />
 		<preference name="deployment-target" value="7.0" />
-        <preference name="fullscreen" value="true" />
-        <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <preference name="orientation" value="portrait" />
 	</platform>
 
 	<platform name="android" >
