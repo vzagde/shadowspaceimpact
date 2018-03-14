@@ -15,18 +15,18 @@
   </author>
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
   
-  <!-- <gap:plugin name="phonegap-admob" source="npm"/> -->
-  <gap:plugin name="https://github.com/appfeel/admob-google-cordova.git" source="git" />
+  <gap:plugin name="phonegap-admob" source="npm"/>
+  <!-- <gap:plugin name="https://github.com/appfeel/admob-google-cordova.git" source="git" /> -->
   <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
   <!-- all platforms -->
   <icon src="icon.png" />
-  <preference name="phonegap-version" value="cli-6.5.0" />
+  <!-- <preference name="phonegap-version" value="cli-6.5.0" /> -->
   <preference name="fullscreen" value="true" />
   
 
 
 	<platform name="ios" >
-        
+    <preference name="phonegap-version" value="cli-6.5.0" />
 		<preference name="target-device" value="universal" />
 		<preference name="prerendered-icon" value="true" />
 		<preference name="detect-data-types" value="true" />
@@ -37,9 +37,10 @@
 	</platform>
 
 	<platform name="android" >
+    <preference name="phonegap-version" value="cli-7.1.0" />
 		<preference name="fullscreen" value="true" />
-  		<preference name="orientation" value="portrait" />
-        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+		<preference name="orientation" value="portrait" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 	</platform>
 </widget>
     
